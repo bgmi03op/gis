@@ -1,0 +1,24 @@
+Prac 3B
+
+add delimited text
+ select SAMPLE from PRAC3 -> DATA -> EXCEL SHEET
+
+FILE FORMAT
+. custom delimiter - tab
+. geometry -  long, latit
+
+geometry ESPG:4326- WGQ:84
+
+
+PRAC 3 cd
+
+OPEN PLUGINS
+
+- settings - 1st checkbox - click (experiment)
+not installed - download -  osm place search AND open layer plugins
+
+in plugins check for osm place search
+in web check for open layer plugins -> OPEN STREET MAP
+
+name contains in the lower left -> university of Mumbai  -> click zoom to see map
+

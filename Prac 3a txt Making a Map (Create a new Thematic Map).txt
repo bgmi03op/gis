@@ -1,0 +1,35 @@
+Prac 3 A
+
+
+from all folder in A add all .shp  file
+
+add vector layer - > Prac3 -> A -> India_State_Admin - > IND_adm1.shp
+give only border to map
+project -> new project layout - > name 
+
+new window mai - > ADD item - >add map (select all)
+right click on checkbox - lock layers , lock style
+(don't cancel this)
+
+next zoom near Mumbai
+again go to the new window
+add 2nd map in the same map next to the previous map
+
+click on map 1
+in item properties - overview -> add overview 
+map frame - map 2
+
+click on map 1
+in item properties - give frame
+map frame - map 2
+
+add label on the map and adjust the font according to you
+add label and right
+<h2>&copy; Copy right Reserved</h2><br>
+<h1>bscit student</h1>
+
+click on - reder as html
+
+add legend and in item properties edit it accorfing to you
+add scale and increase segment in right box
+add arrow 

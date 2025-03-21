@@ -1,0 +1,44 @@
+PRAC 2 A Exploring and Managing Raster data:
+
+2 layer in 1 add layer
+add LAYER-
+RASTER LAYER 1 > PRAC 2 -> A -> 90_asccii-> glds90ag60.asc ->add
+RASTER LAYER 1 > PRAC 2 -> A -> 00_asccii-> glds90ag60.asc ->add
+
+add symbology to both
+render type - > singleband psuedocolor
+min - 0  max - 240
+
+
+(CONTINUE OF A )PRAC 2 B Raster Styling and Analysis
+IN RASTER- raster calculator
+output layer - any name and destination
+gld - gld - > OK
+Remove the other two layers i.e. glds00ag60.asc and glds90ag60.asc
+Double click on pop_diff layer.
+render type - > singleband psuedocolor
+min - -20000  max - 6000
+
+INTERPOLATION - discrete
+remove the value and add value 
+-20000 - no data
+-10- negative
+10 - neutral
+6000 - positive
+
+
+
+
+PRAC 2C Raster Mosaicking and Clipping
+
+add raster layer
+FOLDER - PRAC2-> DATA -> ALL FOUR IMAGES ADD
+TOP NAV (RASTER) - miscellaneous - > merge -> add all four pic
+NEXT - Left bottom layers only select merge
+add layer - > vector layer -> in PRAC2 -> C -> IndiaAdminBoundary - > IND_adm0.shp
+in left bottom layer box in IND_adm - symbolgy - > outlinr
+TOP NAV (RASTER) - extraction - > clip raster by mask layer ->  in input layer - merged ->
+mask layer -> IND_adm0
+
+
+

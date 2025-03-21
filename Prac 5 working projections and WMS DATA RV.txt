@@ -1,0 +1,10 @@
+Prac 5
+
+add vector layer - > select 10m_admin0_countries.zip
+save as - format -ESRI shapefile
+add
+102008 -north America
+
+add raster layer - > minisc_gb -> data -> RGB_TIF_compressed -> MiniScale_(standard)_R17.tif
+
+project - > properties -> CRS -> BRITISH NATION GRID (27700)

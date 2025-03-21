@@ -1,0 +1,55 @@
+Prac 8C Interpolating point data
+
+ ‣Add Raster Layer
+
+PRAC 8 -> DATA -> B -> us.tax_nohads_ll_201404525_float.tif
+
+
+add delimited layer
+
+PRAC 8 -> DATA -> B -> 2013_gaz_ua_national.txt
+
+
+GEOMETRY DEFINITION MAI
+
+X - LONG
+Y - LAT
+
+GEOMETRY CRS -  EPSG:4326 - WGS 84
+okay
+
+PROCESSING (TOP NAV ) -> TOOL BOX (right box)
+RASTER ANALYSIS - SIMPLE RASTER VALUES
+
+raster layer - us.tmax_nohads_ll_20140525_float
+
+output column - tmax_
+
+
+
+remove everyfile except us.tmax_nohads_ll_20140525_float
+
+add vector layer 
+
+PRAC 8 -> DATA -> B -> tl_2018_us_cuntry.shp
+
+PROCESSING (TOP NAV ) -> TOOL BOX (right box)
+RASTER ANALYSIS - zonal statistics
+
+ raster layer - us.tmax_nohads_ll_20140525_float
+
+output column - tmax_
+
+Statistics to calculate - MEAN (only select)
+
+click zonal statistics - properties (symbology)
+
+top select graduated
+
+value - 1.2 tmax_mean
+
+click on classify
+apply
+
+
+

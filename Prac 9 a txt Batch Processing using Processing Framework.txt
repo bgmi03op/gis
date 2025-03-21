@@ -1,0 +1,61 @@
+PRAC 9 A - (Batch Processing using Processing Framework)
+
+
+Add Vector Layer
+
+FOLDER Prac 9 -> A ->ne_10m_admin_0_countries.shp ->add
+
+vector(top nav) -> Geoprocessing tools -> Dissolve
+
+dissolve fields - continent (checkbox)
+
+dissolved - save a file
+
+Select Single Feature tool from the toolbar and 
+click on Africa 
+Right-click - export - > continents layer and select Save Selection As
+
+file name - africa.shp
+save as type - shp
+
+add saved file to map box (checkbox click)
+
+deselect both layer only keep Africa (left bottom box)
+
+PROCESSING (TOP NAV ) -> TOOL BOX (right box)
+Vector overlay - clip (right click on the clip - select excute as batch process)
+
+in INPUT LAYER
+
+select file - ne_10m_airports -> ne_10m_airports.shp 
+click on plus sign
+select file - ne_10m_ports -> ne_10m_ports.shp
+
+in OVERLAY LAYER
+
+same in all 3
+select file - Africa.shp (saved file)
+
+
+in CLIPPED LAYER
+
+save file 
+file name - clipped_
+save as type - shp
+
+
+AUTOFILL setting
+
+autofill mode -  fill with parameter values
+parameter to use - input layer
+
+click checkbox - load laye on completion
+
+deselect africa
+
+
+
+
+
+
+

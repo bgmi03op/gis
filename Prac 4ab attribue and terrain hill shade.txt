@@ -1,0 +1,27 @@
+PRAC 4ab
+
+A attribute - vector
+
+add vectory layer - > data-> popoluated_palces_simple.zip ->add
+double click-open attribute
+pop_max
+click selection features using expression
+pop_max>100 and pop_max<1000
+click select features
+
+
+B terrain - raster
+
+add raster layer - in DATA add - gmted_mea300.tif 
+cooridinates 86.92,27.98 
+scale - 900000
+raster - raster by extend save
+only select clipped Himalaya
+raster - extraction - interval-100 save
+in properties - label 
+
+hillshade
+
+raster 
+analysis -hillshade
+clippedhimalaya save

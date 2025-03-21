@@ -1,0 +1,99 @@
+PRAC 6 A,B,C
+
+A - Georeferencing Topo Sheets and Scanned Maps
+
+add vector layer
+PRAC6 -> A -> IND_adm - >IND_adm0.shp
+
+Go to Plugins→ Manage and Install Plugin
+install Georeferencer
+zoom in to Mumbai
+
+layer -> georeferencer
+in georeferencer -> file -> open raster - > Prac 6 - > A -> Bombay_1909/1870_southern-india_3975_3071_600,jpg
+
+add coordinates
+click on any point on the Bombay map and select from map canvas and click the same point on the previous map as the Bombay map
+
+settings in geo
+
+Transformation type - thin plane spine
+resampling method -Nearest neighbour
+tagert SRS - ESPG:4044 - Unknown datum based 4044
+
+check box - load in QGIS when done -> okay
+
+double click on lower left Bombay  -> transparency 30
+
+
+B- Georeferencing Aerial Imagery
+
+
+Go to Plugins→ Manage and Install Plugin
+install openlayer plugins
+
+web -> open layer -> OpenStreetMap
+project -> properties -> CRS - > pseudo-Mercator EPSG:3857 -> apply add
+view-> panel - > osm place search (click)
+
+name contains -> gateway of india
+
+layer - > georeferencer -> in georeferencer -> add file -> gateway_aerail_imagery
+edit -> add point
+
+add coordinates
+click on any point on the gateway of india map all four corners and select from map canvas and click the same point on the previous map as the other map
+
+Transformation type - thin plane spine
+resampling method -Nearest neighbour
+tagert SRS - ESPG:4044 - Unknown datum based 4044
+
+check box - load in QGIS when done -> okay
+
+
+C- Digitizing Map Data
+
+add raster layer
+Prac 6 -> c-> Christchurch Topo50 map.tif
+
+Go to application properties - > pyramids - > click all the right things ie -349x459 then click on build pyramids
+
+go to top settings -> digitizing
+
+deselect - > enable snappig fault -> okay
+
+
+
+create layer - > new spatiaLite layer
+
+database - digitization.sqlite
+Layer name - digitizrdroad
+geometry type - linestring
+
+later add    EPSG:4167 - NZGD2000
+
+name - name ->add to field list
+type - text -> add to text list
+
+next
+
+draw on any box using pencil
+
+right click aafter drawing - name -road, clss
+
+
+create layer - > new spatiaLite layer
+
+database - digitization.sqlite
+Layer name - digitizrdroad
+geometry type - polygom
+
+later add    EPSG:4167 - NZGD2000
+
+name - name ->add to field list
+
+next
+
+draw on any box using pencil
+
+right click aafter drawing - name -road, clss
